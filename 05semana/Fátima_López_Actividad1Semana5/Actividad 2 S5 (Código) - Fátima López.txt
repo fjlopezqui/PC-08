@@ -1,0 +1,20 @@
+class Program {
+    static void Main(string[] args) {
+        double a = 0;
+        double b = 0;
+        Console.WriteLine("Escribe el primer valor a comparar: ");
+        a = Convert.ToDouble(Console.ReadLine());
+        Console.WriteLine("Escribe el segundo valor a comparar: ");
+        b = Convert.ToDouble(Console.ReadLine());
+            if (a>b) {
+                Console.WriteLine("Verdadero");
+            }
+            else if (a<b) {
+                Console.WriteLine("Falso");
+            }
+            else {
+                Console.WriteLine("Son iguales");
+            }        
+        Console.ReadKey();
+    }
+}
