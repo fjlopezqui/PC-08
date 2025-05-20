@@ -291,10 +291,10 @@
                     TableroFlotaNaval[1, 5] = '★';
                     TableroFlotaNaval[1, 6] = '★';
                     //Destructor (4 casillas)
-                    TableroFlotaNaval[2, 5] = '✸';
-                    TableroFlotaNaval[3, 5] = '✸';
-                    TableroFlotaNaval[4, 5] = '✸';
-                    TableroFlotaNaval[5, 5] = '✸';
+                    TableroFlotaNaval[2, 4] = '✸';
+                    TableroFlotaNaval[3, 4] = '✸';
+                    TableroFlotaNaval[4, 4] = '✸';
+                    TableroFlotaNaval[5, 4] = '✸';
                     break;
 
                 case 9:
