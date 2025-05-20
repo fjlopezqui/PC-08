@@ -1,6 +1,18 @@
-﻿class Program
+﻿/*
+---- Proyecto Parte B | Flota Naval ----
+    Pensamiento Computacional (Práctica)
+
+    Estudiante
+        Fátima Joanna López Quiñonez 1088825
+    
+    Ingeniería en Informática y Sistemas | Primer Semestre 2025
+    Universisdad Rafael Landívar
+
+
+*/
+
+class Program
 {
-    // Clase que representa a un jugador en el juego de Batalla Naval
     class Jugador
     {
         public int NumJugador { get; private set; }     // Número identificador del jugador (1 o 2)
@@ -11,7 +23,7 @@
         public string[] CoordenadasAtacadas { get; private set; }  // Registro de coordenadas ya utilizadas
         public int ContadorCoordenadasAtacadas { get; private set; }  // Contador de ataques realizados
         public bool SeRindio { get; set; }              // Indica si el jugador se rindió durante la partida
-        
+
         // Constructor de la clase Jugador que inicializa sus propiedades
         public Jugador(int numJugador)
         {
@@ -23,11 +35,11 @@
             CoordenadasAtacadas = new string[15];       // Arreglo para guardar coordenadas ya usadas
             ContadorCoordenadasAtacadas = 0;            // Inicializa contador de ataques en cero
             SeRindio = false;                           // Inicialmente el jugador no se ha rendido
-            
+
             // Prepara los tableros con las coordenadas e información inicial
             InicializarTableros();
         }
-        
+
         // Método auxiliar que inicializa ambos tableros del jugador
         void InicializarTableros()
         {
@@ -35,7 +47,7 @@
             InicializarTablero(TableroFlotaNaval);
             InicializarTablero(TableroAtaque);
         }
-        
+
         // Configura un tablero con coordenadas y agua en las casillas interiores
         void InicializarTablero(char[,] tablero)
         {
@@ -106,49 +118,49 @@
                 }
             }
         }
-        
+
         // Permite al jugador elegir la configuración de barcos para su flota
         public void ConfigurarBarcos()
         {
             // Limpia la pantalla y muestra título para la configuración
             Console.Clear();
             Console.WriteLine($"=== CONFIGURACIÓN DE BARCOS - JUGADOR {NumJugador} ===");
-            
+
             Random random = new Random();               // Generador de números aleatorios
             int opcionMapa = 0;                         // Variable para almacenar mapa seleccionado
             bool configuracionAceptada = false;         // Control para bucle de selección
-            
+
             // Bucle que continúa hasta que el jugador acepte una configuración
             while (!configuracionAceptada)
             {
                 // Genera un número aleatorio entre 1 y 10 para la configuración
                 opcionMapa = random.Next(1, 11);
-                
+
                 // Aplica la configuración de barcos al tablero según la opción
                 AplicarConfiguracionPredeterminada(opcionMapa);
-                
+
                 // Muestra el mapa generado al jugador para su evaluación
                 Console.WriteLine("Mapa generado:");
                 DibujarTableroFlotaNaval();
-                
+
                 // Solicita confirmación al jugador sobre la configuración mostrada
                 Console.WriteLine("\nIndique si desea mantener esta configuración:");
                 Console.WriteLine("1. Sí, mantener flota");
                 Console.WriteLine("2. No, regenerar flota");
-                
+
                 // Obtiene y valida la elección del jugador
                 int opcion = Program.ValidarEntradaMenu(2);
                 configuracionAceptada = opcion == 1;   // Solo acepta si eligió opción 1
             }
-            
+
             // Muestra mensaje de confirmación final
             Console.WriteLine($"¡Configuración de barcos del Jugador {NumJugador} aceptada!");
             Console.WriteLine("Presione cualquier tecla para continuar...");
             Console.ReadKey();
         }
-        
+
         // Aplica una configuración predefinida de barcos según el patrón elegido
-         void AplicarConfiguracionPredeterminada(int opcion)
+        void AplicarConfiguracionPredeterminada(int opcion)
         {
             // Limpia el tablero de posibles barcos previos
             for (int fila = 1; fila < 7; fila++)
@@ -313,19 +325,19 @@
                     break;
             }
         }
-        
+
         // Método que muestra ambos tableros del jugador (flota y ataques)
         public void DibujarTableros()
         {
             // Muestra el tablero donde están ubicados los barcos del jugador
             Console.WriteLine("\nTu Flota Naval:");
             DibujarTableroFlotaNaval();
-            
+
             // Muestra el tablero donde el jugador registra sus ataques al enemigo
             Console.WriteLine("\nTu Tablero de Ataque:");
             DibujarTableroAtaque();
         }
-        
+
         // Muestra en pantalla el tablero de barcos del jugador
         public void DibujarTableroFlotaNaval()
         {
@@ -339,7 +351,7 @@
                 Console.WriteLine();   // Salto de línea al terminar cada fila
             }
         }
-        
+
         // Muestra en pantalla el tablero de ataques realizados por el jugador
         public void DibujarTableroAtaque()
         {
@@ -353,21 +365,33 @@
                 Console.WriteLine();   // Salto de línea al terminar cada fila
             }
         }
-        
+
         // Permite al jugador seleccionar coordenadas para lanzar un misil
         public string LanzarMisil()
         {
             bool coordenadaValida = false;    // Control para validación de coordenadas
             string coordenada = "";           // Variable para almacenar la coordenada elegida
-            
+
             // Bucle que continúa hasta obtener una coordenada válida
             while (!coordenadaValida)
             {
                 // Muestra información sobre misiles restantes
                 Console.WriteLine($"\nMisiles restantes: {CantidadMisiles}");
                 Console.Write("Ingrese coordenada de ataque (Ejemplo: A-1): ");
-                coordenada = Console.ReadLine()?.Trim() ?? "";
-                
+                string entrada = Console.ReadLine()!; //El usuario ingresa la coordenada
+                if (entrada != null) //Si la entrada no es nula
+                {
+                    coordenada = entrada.Trim(); //Quitará los espacios en blanco
+                    if (coordenada.Length == 0) //Si la coordenada se vuelve vacía completamente
+                    {
+                        coordenada = "";  //La coordenada se devolverá como vacía, lo cual no se validará por el formato de Length que debe ser 3
+                    }
+                }
+                else //
+                {
+                    coordenada = ""; //La coordenada se devolverá como vacía, lo cual no se validará por el formato de Length que debe ser 3
+                }
+
                 // Valida el formato y que no se haya atacado previamente la posición
                 if (ValidarFormato(coordenada) && ValidarPosicion(coordenada))
                 {
@@ -388,33 +412,33 @@
                     Console.WriteLine("Ya has atacado esta coordenada. Intenta otra.");
                 }
             }
-            
+
             return coordenada;   // Devuelve la coordenada válida seleccionada
         }
-        
+
         // Verifica que el formato de la coordenada sea válido
         bool ValidarFormato(string coordenada)
         {
             // Verifica que la longitud sea exactamente 3 caracteres
             if (coordenada.Length != 3)
                 return false;
-                
+
             // Extrae cada componente de la coordenada para validación
             char fila = coordenada[0];
             char separador = coordenada[1];
             char columna = coordenada[2];
-            
+
             // Comprueba que la fila sea una letra entre A y F
-            bool filaValida = (fila >= 'A' && fila <= 'F');
+            bool filaValida = fila >= 'A' && fila <= 'F';
             // Comprueba que el separador sea un guion
-            bool separadorValido = (separador == '-');
+            bool separadorValido = separador == '-';
             // Comprueba que la columna sea un número entre 1 y 6
-            bool columnaValida = (columna >= '1' && columna <= '6');
-            
+            bool columnaValida = columna >= '1' && columna <= '6';
+
             // La coordenada es válida solo si todos los componentes lo son
             return filaValida && separadorValido && columnaValida;
         }
-        
+
         // Verifica que la coordenada no haya sido utilizada anteriormente
         bool ValidarPosicion(string coordenada)
         {
@@ -429,7 +453,7 @@
             }
             return true;   // Si no encuentra coincidencia, la coordenada es nueva
         }
-        
+
         // Verifica si todos los barcos del jugador han sido derribados
         public bool TodosLosBarcosDerribados()
         {
@@ -437,7 +461,7 @@
             bool submarinoHundido = true;
             bool fragataHundida = true;
             bool destructorHundido = true;
-            
+
             // Recorre todo el tablero buscando barcos restantes
             for (int fila = 1; fila < 7; fila++)
             {
@@ -452,7 +476,7 @@
                         destructorHundido = false;
                 }
             }
-            
+
             // Devuelve true solo si todos los tipos de barcos están hundidos
             return submarinoHundido && fragataHundida && destructorHundido;
         }
@@ -715,19 +739,19 @@
             }
         }
 
-// Muestra las estadísticas finales de la partida para ambos jugadores
-Console.WriteLine("\n=== ESTADÍSTICAS ===");
-Console.WriteLine($"Jugador 1: {jugador1.PuntosJugador} puntos, {15 - jugador1.CantidadMisiles} misiles utilizados");
-Console.WriteLine($"Jugador 2: {jugador2.PuntosJugador} puntos, {15 - jugador2.CantidadMisiles} misiles utilizados");
+        // Muestra las estadísticas finales de la partida para ambos jugadores
+        Console.WriteLine("\n=== ESTADÍSTICAS ===");
+        Console.WriteLine($"Jugador 1: {jugador1.PuntosJugador} puntos, {15 - jugador1.CantidadMisiles} misiles utilizados");
+        Console.WriteLine($"Jugador 2: {jugador2.PuntosJugador} puntos, {15 - jugador2.CantidadMisiles} misiles utilizados");
 
-Console.WriteLine("\nPresiona cualquier tecla para volver al menú principal...");
+        Console.WriteLine("\nPresiona cualquier tecla para volver al menú principal...");
 
-// Espera a que el usuario presione una tecla cualquiera
-Console.ReadKey();
-// Limpia la pantalla antes de mostrar el menú principal
-Console.Clear();
-// Vuelve al menú principal llamando al método Main
-Main();
+        // Espera a que el usuario presione una tecla cualquiera
+        Console.ReadKey();
+        // Limpia la pantalla antes de mostrar el menú principal
+        Console.Clear();
+        // Vuelve al menú principal llamando al método Main
+        Main();
     }
 
     // Método que muestra las instrucciones del juego al usuario
