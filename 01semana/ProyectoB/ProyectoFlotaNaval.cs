@@ -121,8 +121,8 @@
             // Bucle que continúa hasta que el jugador acepte una configuración
             while (!configuracionAceptada)
             {
-                // Genera un número aleatorio entre 1 y 4 para la configuración
-                opcionMapa = random.Next(1, 5);
+                // Genera un número aleatorio entre 1 y 10 para la configuración
+                opcionMapa = random.Next(1, 11);
                 
                 // Aplica la configuración de barcos al tablero según la opción
                 AplicarConfiguracionPredeterminada(opcionMapa);
@@ -138,7 +138,7 @@
                 
                 // Obtiene y valida la elección del jugador
                 int opcion = Program.ValidarEntradaMenu(2);
-                configuracionAceptada = (opcion == 1);   // Solo acepta si eligió opción 1
+                configuracionAceptada = opcion == 1;   // Solo acepta si eligió opción 1
             }
             
             // Muestra mensaje de confirmación final
@@ -158,7 +158,7 @@
                     TableroFlotaNaval[fila, columna] = '~';
                 }
             }
-            
+
             // Según la opción, coloca los barcos en posiciones predefinidas
             switch (opcion)
             {
@@ -220,6 +220,96 @@
                     TableroFlotaNaval[3, 1] = '✸';
                     TableroFlotaNaval[4, 1] = '✸';
                     TableroFlotaNaval[5, 1] = '✸';
+                    break;
+
+                case 5:
+                    //Submarino (2 casillas)
+                    TableroFlotaNaval[1, 2] = '✦';
+                    TableroFlotaNaval[1, 3] = '✦';
+                    //Fragata (3 casillas)
+                    TableroFlotaNaval[2, 4] = '★';
+                    TableroFlotaNaval[2, 5] = '★';
+                    TableroFlotaNaval[2, 6] = '★';
+                    //Destructor (4 casillas)
+                    TableroFlotaNaval[3, 6] = '✸';
+                    TableroFlotaNaval[4, 6] = '✸';
+                    TableroFlotaNaval[5, 6] = '✸';
+                    TableroFlotaNaval[6, 6] = '✸';
+                    break;
+
+                case 6:
+                    //Submarino (2 casillas)
+                    TableroFlotaNaval[5, 2] = '✦';
+                    TableroFlotaNaval[5, 3] = '✦';
+                    //Fragata (3 casillas)
+                    TableroFlotaNaval[4, 4] = '★';
+                    TableroFlotaNaval[4, 5] = '★';
+                    TableroFlotaNaval[4, 6] = '★';
+                    //Destructor (4 casillas)
+                    TableroFlotaNaval[1, 2] = '✸';
+                    TableroFlotaNaval[2, 2] = '✸';
+                    TableroFlotaNaval[3, 2] = '✸';
+                    TableroFlotaNaval[4, 2] = '✸';
+                    break;
+
+                case 7:
+                    //Submarino (2 casillas)
+                    TableroFlotaNaval[4, 4] = '✦';
+                    TableroFlotaNaval[4, 5] = '✦';
+                    //Fragata (3 casillas)
+                    TableroFlotaNaval[1, 1] = '★';
+                    TableroFlotaNaval[1, 2] = '★';
+                    TableroFlotaNaval[1, 3] = '★';
+                    //Destructor (4 casillas)
+                    TableroFlotaNaval[3, 3] = '✸';
+                    TableroFlotaNaval[4, 3] = '✸';
+                    TableroFlotaNaval[5, 3] = '✸';
+                    TableroFlotaNaval[6, 3] = '✸';
+                    break;
+
+                case 8:
+                    //Submarino (2 casillas)
+                    TableroFlotaNaval[3, 1] = '✦';
+                    TableroFlotaNaval[3, 2] = '✦';
+                    //Fragata (3 casillas)
+                    TableroFlotaNaval[2, 3] = '★';
+                    TableroFlotaNaval[2, 4] = '★';
+                    TableroFlotaNaval[2, 5] = '★';
+                    //Destructor (4 casillas)
+                    TableroFlotaNaval[1, 6] = '✸';
+                    TableroFlotaNaval[2, 6] = '✸';
+                    TableroFlotaNaval[3, 6] = '✸';
+                    TableroFlotaNaval[4, 6] = '✸';
+                    break;
+
+                case 10:
+                    //Submarino (2 casillas)
+                    TableroFlotaNaval[1, 2] = '✦';
+                    TableroFlotaNaval[1, 3] = '✦';
+                    //Fragata (3 casillas)
+                    TableroFlotaNaval[1, 4] = '★';
+                    TableroFlotaNaval[1, 5] = '★';
+                    TableroFlotaNaval[1, 6] = '★';
+                    //Destructor (4 casillas)
+                    TableroFlotaNaval[2, 5] = '✸';
+                    TableroFlotaNaval[3, 5] = '✸';
+                    TableroFlotaNaval[4, 5] = '✸';
+                    TableroFlotaNaval[5, 5] = '✸';
+                    break;
+
+                case 9:
+                    //Submarino (2 casillas)
+                    TableroFlotaNaval[2, 3] = '✦';
+                    TableroFlotaNaval[2, 4] = '✦';
+                    //Fragata (3 casillas)
+                    TableroFlotaNaval[3, 2] = '★';
+                    TableroFlotaNaval[3, 3] = '★';
+                    TableroFlotaNaval[3, 4] = '★';
+                    //Destructor (4 casillas)
+                    TableroFlotaNaval[3, 5] = '✸';
+                    TableroFlotaNaval[4, 5] = '✸';
+                    TableroFlotaNaval[5, 5] = '✸';
+                    TableroFlotaNaval[6, 5] = '✸';
                     break;
             }
         }
