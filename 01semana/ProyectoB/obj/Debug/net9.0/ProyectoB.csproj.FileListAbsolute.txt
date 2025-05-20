@@ -1,0 +1,15 @@
+C:\Users\flope\OneDrive\Escritorio\PC\Repositorio\PC-08\01semana\ProyectoB\bin\Debug\net9.0\ProyectoB.exe
+C:\Users\flope\OneDrive\Escritorio\PC\Repositorio\PC-08\01semana\ProyectoB\bin\Debug\net9.0\ProyectoB.deps.json
+C:\Users\flope\OneDrive\Escritorio\PC\Repositorio\PC-08\01semana\ProyectoB\bin\Debug\net9.0\ProyectoB.runtimeconfig.json
+C:\Users\flope\OneDrive\Escritorio\PC\Repositorio\PC-08\01semana\ProyectoB\bin\Debug\net9.0\ProyectoB.dll
+C:\Users\flope\OneDrive\Escritorio\PC\Repositorio\PC-08\01semana\ProyectoB\bin\Debug\net9.0\ProyectoB.pdb
+C:\Users\flope\OneDrive\Escritorio\PC\Repositorio\PC-08\01semana\ProyectoB\obj\Debug\net9.0\ProyectoB.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\flope\OneDrive\Escritorio\PC\Repositorio\PC-08\01semana\ProyectoB\obj\Debug\net9.0\ProyectoB.AssemblyInfoInputs.cache
+C:\Users\flope\OneDrive\Escritorio\PC\Repositorio\PC-08\01semana\ProyectoB\obj\Debug\net9.0\ProyectoB.AssemblyInfo.cs
+C:\Users\flope\OneDrive\Escritorio\PC\Repositorio\PC-08\01semana\ProyectoB\obj\Debug\net9.0\ProyectoB.csproj.CoreCompileInputs.cache
+C:\Users\flope\OneDrive\Escritorio\PC\Repositorio\PC-08\01semana\ProyectoB\obj\Debug\net9.0\ProyectoB.sourcelink.json
+C:\Users\flope\OneDrive\Escritorio\PC\Repositorio\PC-08\01semana\ProyectoB\obj\Debug\net9.0\ProyectoB.dll
+C:\Users\flope\OneDrive\Escritorio\PC\Repositorio\PC-08\01semana\ProyectoB\obj\Debug\net9.0\refint\ProyectoB.dll
+C:\Users\flope\OneDrive\Escritorio\PC\Repositorio\PC-08\01semana\ProyectoB\obj\Debug\net9.0\ProyectoB.pdb
+C:\Users\flope\OneDrive\Escritorio\PC\Repositorio\PC-08\01semana\ProyectoB\obj\Debug\net9.0\ProyectoB.genruntimeconfig.cache
+C:\Users\flope\OneDrive\Escritorio\PC\Repositorio\PC-08\01semana\ProyectoB\obj\Debug\net9.0\ref\ProyectoB.dll

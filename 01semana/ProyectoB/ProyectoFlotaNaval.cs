@@ -631,10 +631,11 @@ Console.WriteLine($"Jugador 1: {jugador1.PuntosJugador} puntos, {15 - jugador1.C
 Console.WriteLine($"Jugador 2: {jugador2.PuntosJugador} puntos, {15 - jugador2.CantidadMisiles} misiles utilizados");
 
 Console.WriteLine("\nPresiona cualquier tecla para volver al menú principal...");
-// Limpia la pantalla antes de mostrar el menú principal
-Console.Clear();
+
 // Espera a que el usuario presione una tecla cualquiera
 Console.ReadKey();
+// Limpia la pantalla antes de mostrar el menú principal
+Console.Clear();
 // Vuelve al menú principal llamando al método Main
 Main();
     }
