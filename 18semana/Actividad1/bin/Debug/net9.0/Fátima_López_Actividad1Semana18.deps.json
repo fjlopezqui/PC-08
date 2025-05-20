@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v9.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v9.0": {
+      "Fátima_López_Actividad1Semana18/1.0.0": {
+        "runtime": {
+          "Fátima_López_Actividad1Semana18.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Fátima_López_Actividad1Semana18/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

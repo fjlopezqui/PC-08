@@ -1,0 +1,14 @@
+C:\Users\flope\OneDrive\Escritorio\Programas_VS\PC\Fátima_López_Actividad1Semana18\bin\Debug\net9.0\Fátima_López_Actividad1Semana18.exe
+C:\Users\flope\OneDrive\Escritorio\Programas_VS\PC\Fátima_López_Actividad1Semana18\bin\Debug\net9.0\Fátima_López_Actividad1Semana18.deps.json
+C:\Users\flope\OneDrive\Escritorio\Programas_VS\PC\Fátima_López_Actividad1Semana18\bin\Debug\net9.0\Fátima_López_Actividad1Semana18.runtimeconfig.json
+C:\Users\flope\OneDrive\Escritorio\Programas_VS\PC\Fátima_López_Actividad1Semana18\bin\Debug\net9.0\Fátima_López_Actividad1Semana18.dll
+C:\Users\flope\OneDrive\Escritorio\Programas_VS\PC\Fátima_López_Actividad1Semana18\bin\Debug\net9.0\Fátima_López_Actividad1Semana18.pdb
+C:\Users\flope\OneDrive\Escritorio\Programas_VS\PC\Fátima_López_Actividad1Semana18\obj\Debug\net9.0\Fátima_López_Actividad1Semana18.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\flope\OneDrive\Escritorio\Programas_VS\PC\Fátima_López_Actividad1Semana18\obj\Debug\net9.0\Fátima_López_Actividad1Semana18.AssemblyInfoInputs.cache
+C:\Users\flope\OneDrive\Escritorio\Programas_VS\PC\Fátima_López_Actividad1Semana18\obj\Debug\net9.0\Fátima_López_Actividad1Semana18.AssemblyInfo.cs
+C:\Users\flope\OneDrive\Escritorio\Programas_VS\PC\Fátima_López_Actividad1Semana18\obj\Debug\net9.0\Fátima_López_Actividad1Semana18.csproj.CoreCompileInputs.cache
+C:\Users\flope\OneDrive\Escritorio\Programas_VS\PC\Fátima_López_Actividad1Semana18\obj\Debug\net9.0\Fátima_López_Actividad1Semana18.dll
+C:\Users\flope\OneDrive\Escritorio\Programas_VS\PC\Fátima_López_Actividad1Semana18\obj\Debug\net9.0\refint\Fátima_López_Actividad1Semana18.dll
+C:\Users\flope\OneDrive\Escritorio\Programas_VS\PC\Fátima_López_Actividad1Semana18\obj\Debug\net9.0\Fátima_López_Actividad1Semana18.pdb
+C:\Users\flope\OneDrive\Escritorio\Programas_VS\PC\Fátima_López_Actividad1Semana18\obj\Debug\net9.0\Fátima_López_Actividad1Semana18.genruntimeconfig.cache
+C:\Users\flope\OneDrive\Escritorio\Programas_VS\PC\Fátima_López_Actividad1Semana18\obj\Debug\net9.0\ref\Fátima_López_Actividad1Semana18.dll
