@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\flope\\OneDrive\\Escritorio\\PC\\Repositorio\\PC-08\\18semana\\Actividad1\\Fátima_López_Actividad1Semana18.csproj",
-      "projectName": "Fátima_López_Actividad1Semana18",
-      "projectPath": "C:\\Users\\flope\\OneDrive\\Escritorio\\PC\\Repositorio\\PC-08\\18semana\\Actividad1\\Fátima_López_Actividad1Semana18.csproj",
+      "projectUniqueName": "C:\\Users\\flope\\OneDrive\\Escritorio\\PC\\Repositorio\\PC-08\\01semana\\ProyectoB\\ProyectoB.csproj",
+      "projectName": "ProyectoB",
+      "projectPath": "C:\\Users\\flope\\OneDrive\\Escritorio\\PC\\Repositorio\\PC-08\\01semana\\ProyectoB\\ProyectoB.csproj",
       "packagesPath": "C:\\Users\\flope\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\flope\\OneDrive\\Escritorio\\PC\\Repositorio\\PC-08\\18semana\\Actividad1\\obj\\",
+      "outputPath": "C:\\Users\\flope\\OneDrive\\Escritorio\\PC\\Repositorio\\PC-08\\01semana\\ProyectoB\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\flope\\AppData\\Roaming\\NuGet\\NuGet.Config"
