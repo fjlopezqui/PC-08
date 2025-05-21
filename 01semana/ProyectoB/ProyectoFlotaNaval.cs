@@ -149,7 +149,7 @@ class Program
                 Console.WriteLine("2. No, regenerar flota");
 
                 // Obtiene y valida la elección del jugador
-                int opcion = Program.ValidarEntradaMenu(2);
+                int opcion = ValidarEntradaMenu(2);
                 configuracionAceptada = opcion == 1;   // Solo acepta si eligió opción 1
             }
 
