@@ -615,7 +615,7 @@ class Program
                 Console.WriteLine("¡ACIERTO! Has impactado un barco enemigo.");
 
                 // Marca el daño en el tablero del defensor
-                defensor.TableroFlotaNaval[indices[0], indices[1]] = '●';
+                defensor.TableroFlotaNaval[indices[0], indices[1]] = '✖';
 
                 // Verifica si el impacto ha hundido completamente el barco
                 bool barcoHundido = false;
